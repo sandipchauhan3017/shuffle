@@ -1,0 +1,159 @@
+h1 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196f3;
+    padding: 10px;
+}
+
+.grid-item {
+    border:1px solid #000;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 25%;
+    float: left;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.grid-item_1 {
+    background-color: #6f98a8;
+}
+
+.grid-item_2 {
+    background-color: #2b8ead;
+}
+.grid-item_3 {
+    background-color: #333333;
+}
+.grid-item_4 {
+    background-color: #2b8ead;
+}
+.grid-item_5 {
+    background-color: #333333;
+}
+.grid-item_6 {
+    background-color: #bfbfbf;
+}
+.grid-item_7 {
+    background-color: #bfbfbf;
+}
+.grid-item_8 {
+    background-color: #6f98a8;
+}
+.grid-item_9 {
+    background-color: #333333;
+}
+
+.main-container {
+    display: flex;
+    /* flex-direction: column-reverse; */
+}
+
+.main-container > div {
+    /* margin: 10px; */
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#gridCont {
+    width: 80%;
+}
+
+.actions-container {
+    width: 20%;
+}
+
+.actionbtn{
+    width: 49%;
+    border-radius: 5px;
+    height: 45px;
+    background-color: #72c3dc;
+    border: 0px;
+    border-bottom: 5px solid #2B8EAD;
+    color: #fff;
+    cursor: pointer;
+}
+
+.shuffle_btn {
+    float: left;
+}
+
+.reset_btn {
+    float: right;
+}
+
+.sign{
+    padding-top:10px;
+    margin:auto;
+    width:50%;
+    font-style: italic;
+}
+
+@media (min-width: 375px) and (max-width:700px) {
+   
+    .main-container {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    #gridCont {
+        display: flex;
+        width: inherit;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .grid-item {
+        width: 100%;
+        background-color: #CCC;
+        border:0px;
+        margin-top: 10px;
+        color:#000;
+    }
+
+    .grid-item_1 {
+        border-left:10px solid #6f98a8;
+    }
+
+    .grid-item_2 {
+        border-left:10px solid #2b8ead;
+    }
+
+    .grid-item_3 {
+        border-left:10px solid #333333;
+    }
+
+    .grid-item_4 {
+        border-left:10px solid #2b8ead;
+    }
+
+    .grid-item_5 {
+        border-left:10px solid #333333;
+    }
+
+    .grid-item_6 {
+        border-left:10px solid #bfbfbf;
+    }
+
+    .grid-item_7 {
+        border-left:10px solid #bfbfbf;
+    }
+
+    .grid-item_8 {
+        border-left:10px solid #6f98a8;
+    }
+
+    .grid-item_9 {
+        border-left:10px solid #333333;
+    }
+    
+    .actions-container {
+        width: 100% !important;
+    }
+}
